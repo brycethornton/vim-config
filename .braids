@@ -1,4 +1,11 @@
 --- 
+vim/bundle/nerdtree: 
+  squashed: true
+  url: git://github.com/scrooloose/nerdtree.git
+  type: git
+  revision: 153041ac939502746e5a24468910eb7214a3f593
+  branch: master
+  remote: braid/vim/bundle/nerdtree
 vim: 
   squashed: true
   url: git://github.com/tpope/vim-pathogen.git
