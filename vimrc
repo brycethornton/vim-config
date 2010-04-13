@@ -1,12 +1,17 @@
 " UTF-8 All the way
 scriptencoding utf-8
 
+colorscheme krunktastic
+
 " Enable filetype-specific indenting, syntax, and plugins
 filetype plugin indent on
 set nocompatible
 syntax on
 
 autocmd FileType php set tabstop=4 softtabstop=4 shiftwidth=4
+
+" Allow F8 to turn autoindent off
+:nnoremap <F8> :setl noai nocin nosi inde=<CR>
 
 " Highlight matching parens
 set showmatch

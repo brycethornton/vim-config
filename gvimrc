@@ -1,6 +1,11 @@
 " Set the guifont
 set guifont=Inconsolata:h14
 
+set antialias
+
+" fullscreen maximizes vertically AND horizontally
+set fuoptions=maxvert,maxhorz
+
 " fullscreen maximizes vertically AND horizontally
 set fuoptions=maxvert,maxhorz
 
