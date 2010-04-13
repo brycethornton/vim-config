@@ -45,3 +45,6 @@ map <silent> <D-6> :tabn 6<CR>
 map <silent> <D-7> :tabn 7<CR>
 map <silent> <D-8> :tabn 8<CR>
 map <silent> <D-9> :tabn 9<CR>
+
+" Make F2 open NERDTree
+nmap <F2> :NERDTreeToggle<CR>
