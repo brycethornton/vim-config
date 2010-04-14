@@ -13,6 +13,13 @@ vim/bundle/nerdtree:
   revision: 153041ac939502746e5a24468910eb7214a3f593
   branch: master
   remote: braid/vim/bundle/nerdtree
+vim/bundle/vim-rails: 
+  squashed: true
+  url: git://github.com/tpope/vim-rails.git
+  type: git
+  revision: c2ec64ee8e5a619803483e21dec254fc5e33e4b3
+  branch: master
+  remote: braid/vim/bundle/vim-rails
 vim: 
   squashed: true
   url: git://github.com/tpope/vim-pathogen.git
