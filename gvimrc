@@ -1,5 +1,6 @@
 " Set the guifont
-set guifont=Monaco:h12
+" http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/
+set guifont=Bitstream\ Vera\ Sans\ Mono:h12
 
 set antialias
 
@@ -20,8 +21,8 @@ set nomousefocus
 
 " Hide mouse pointer on insert mode.
 set mousehide
-  
-" Hide toolbar 
+
+" Hide toolbar
 set guioptions-=T
 
 " Scrollbar is always off.
