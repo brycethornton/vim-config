@@ -26,14 +26,17 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
-" for php
-autocmd FileType php set tabstop=4 softtabstop=4 shiftwidth=4
-
 " line numbers
 set number
 set numberwidth=3
 
 let mapleader = ","
+
+" Set to auto read when a file is changed from the outside
+set autoread
+
+" strip trailing whitespace on write
+autocmd BufWritePre * :%s/\s\+$//e
 
 " STATUS BAR CONFIG
 set laststatus=2
@@ -65,3 +68,11 @@ set incsearch
 
 " assume the /g flag on :s substitutions to replace all matches in a line:
 set gdefault
+
+" PHP-specific settings
+
+" convert tabs to spaces when a PHP file is loaded
+auto BufReadPost *.php retab!
+
+" use 4 spaces instead of tabs
+autocmd FileType php set tabstop=4 softtabstop=4 shiftwidth=4
