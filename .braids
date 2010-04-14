@@ -1,4 +1,11 @@
 --- 
+vim/bundle/git-vim: 
+  squashed: true
+  url: git://github.com/motemen/git-vim.git
+  type: git
+  revision: cb110a2a9c1532b8737ed37953aeaaa48436351c
+  branch: master
+  remote: braid/vim/bundle/git-vim
 vim/bundle/nerdtree: 
   squashed: true
   url: git://github.com/scrooloose/nerdtree.git
