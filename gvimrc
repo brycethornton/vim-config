@@ -1,17 +1,12 @@
 " Set the guifont
-set guifont=Inconsolata:h14
+set guifont=Monaco:h12
 
 set antialias
 
 " fullscreen maximizes vertically AND horizontally
 set fuoptions=maxvert,maxhorz
 
-" fullscreen maximizes vertically AND horizontally
-set fuoptions=maxvert,maxhorz
-
 if has("gui_running")
-  set guioptions=e
-  set guioptions-=m
   set transparency=5
   set lines=65
   set columns=175
@@ -45,6 +40,3 @@ map <silent> <D-6> :tabn 6<CR>
 map <silent> <D-7> :tabn 7<CR>
 map <silent> <D-8> :tabn 8<CR>
 map <silent> <D-9> :tabn 9<CR>
-
-" Make F2 open NERDTree
-nmap <F2> :NERDTreeToggle<CR>

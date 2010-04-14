@@ -11,11 +11,6 @@ filetype plugin indent on
 set nocompatible
 syntax on
 
-autocmd FileType php set tabstop=4 softtabstop=4 shiftwidth=4
-
-" Allow F8 to turn autoindent off
-:nnoremap <F8> :setl noai nocin nosi inde=<CR>
-
 " Highlight matching parens
 set showmatch
 
@@ -31,11 +26,25 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+" for php
+autocmd FileType php set tabstop=4 softtabstop=4 shiftwidth=4
+
 " line numbers
 set number
 set numberwidth=3
 
 let mapleader = ","
+
+" STATUS BAR CONFIG
+set laststatus=2
+set statusline=\ "
+set statusline+=%f\ " file name
+set statusline+=[
+set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
+set statusline+=]
+set statusline+=%h%1*%m%r%w%0* " flag
+set statusline+=%= " right align
+set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
 
 " NERDTree CONFIGURATION
 
@@ -45,15 +54,14 @@ let NERDChristmasTree = 1
 " Make it easy to see where we are
 let NERDTreeHighlightCursorline = 1
 
-" Make bookmarks visible
-let NERDTreeShowBookmarks = 1
-
 " Show hidden files
 let NERDTreeShowHidden = 1
 
-" Don't hijack NETRW
-let NERDTreeHijackNetrw = 0
-let NERDTreeIgnore=['\.$', '\~$']
-
 " Make F2 open NERDTree
 nmap <F2> :NERDTreeToggle<CR>
+
+" show the `best match so far' as search strings are typed:
+set incsearch
+
+" assume the /g flag on :s substitutions to replace all matches in a line:
+set gdefault
