@@ -1,4 +1,11 @@
 --- 
+vim/bundle/ack.vim: 
+  squashed: true
+  url: git://github.com/mileszs/ack.vim.git
+  type: git
+  revision: 724747b4aee363cf6adbfb3436b8ebe5c9296153
+  branch: master
+  remote: braid/vim/bundle/ack.vim
 vim/bundle/snipmate.vim: 
   squashed: true
   url: git://github.com/msanders/snipmate.vim.git
