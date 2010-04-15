@@ -1,29 +1,29 @@
 --- 
-vim/bundle/ack.vim: 
-  squashed: true
-  url: git://github.com/mileszs/ack.vim.git
-  type: git
-  revision: 724747b4aee363cf6adbfb3436b8ebe5c9296153
-  branch: master
-  remote: braid/vim/bundle/ack.vim
-vim/bundle/snipmate.vim: 
-  squashed: true
-  url: git://github.com/msanders/snipmate.vim.git
-  type: git
-  revision: f5a75d075d3c005ebe69e3f5e56cf99516e8aa3b
-  branch: master
-  remote: braid/vim/bundle/snipmate.vim
 vim/bundle/git-vim: 
   squashed: true
-  url: git://github.com/motemen/git-vim.git
   type: git
+  url: git://github.com/motemen/git-vim.git
   revision: cb110a2a9c1532b8737ed37953aeaaa48436351c
   branch: master
   remote: braid/vim/bundle/git-vim
+vim/bundle/snipmate.vim: 
+  squashed: true
+  type: git
+  url: git://github.com/msanders/snipmate.vim.git
+  revision: f5a75d075d3c005ebe69e3f5e56cf99516e8aa3b
+  branch: master
+  remote: braid/vim/bundle/snipmate.vim
+vim/bundle/ack.vim: 
+  squashed: true
+  type: git
+  url: git://github.com/mileszs/ack.vim.git
+  revision: 724747b4aee363cf6adbfb3436b8ebe5c9296153
+  branch: master
+  remote: braid/vim/bundle/ack.vim
 vim/bundle/nerdtree: 
   squashed: true
-  url: git://github.com/scrooloose/nerdtree.git
   type: git
+  url: git://github.com/scrooloose/nerdtree.git
   revision: 153041ac939502746e5a24468910eb7214a3f593
   branch: master
   remote: braid/vim/bundle/nerdtree
@@ -31,20 +31,20 @@ vim/bundle/vim-rails:
   squashed: true
   url: git://github.com/tpope/vim-rails.git
   type: git
-  revision: c2ec64ee8e5a619803483e21dec254fc5e33e4b3
+  revision: a6f3a539251705a5f4ef26696c4caf16009afa5e
   branch: master
   remote: braid/vim/bundle/vim-rails
 vim: 
   squashed: true
-  url: git://github.com/tpope/vim-pathogen.git
   type: git
+  url: git://github.com/tpope/vim-pathogen.git
   revision: 9dc6d067fb089e37ae28e41b2a1bc5b5cf140554
   branch: master
   remote: braid/vim
 vim/bundle/vim-supertab: 
   squashed: true
-  url: git://github.com/tsaleh/vim-supertab.git
   type: git
+  url: git://github.com/tsaleh/vim-supertab.git
   revision: 096be343f89c63fc086a55262f2f264d0d0524b0
   branch: master
   remote: braid/vim/bundle/vim-supertab
