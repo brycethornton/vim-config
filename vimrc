@@ -69,6 +69,9 @@ set incsearch
 " assume the /g flag on :s substitutions to replace all matches in a line:
 set gdefault
 
+" ignore case when searching
+set ignorecase
+
 " PHP-specific settings
 
 " convert tabs to spaces when a PHP file is loaded
