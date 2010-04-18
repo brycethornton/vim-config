@@ -48,3 +48,10 @@ vim/bundle/vim-supertab:
   revision: 096be343f89c63fc086a55262f2f264d0d0524b0
   branch: master
   remote: braid/vim/bundle/vim-supertab
+vim/bundle/vim-endwise: 
+  squashed: true
+  url: git://github.com/tpope/vim-endwise.git
+  type: git
+  revision: 780fa5603c0917d9b22e3b64dd8ab0423e006eb5
+  branch: master
+  remote: braid/vim/bundle/vim-endwise
