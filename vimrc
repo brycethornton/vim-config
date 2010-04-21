@@ -20,11 +20,27 @@ set nowrap
 " Set temporary directory (don't litter local dir with swp/tmp files)
 set directory=/tmp/
 
-" use indents of 2 spaces, and have them copied down lines:
-set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+function! SetupEnvironment()
+  let l:path = expand('%:p')
+  if l:path =~ "development\/wordpress" || l:path =~ "development\/fusefly"
+    set noexpandtab
+    set shiftwidth=4
+    set tabstop=4
+  elseif l:path =~ "development\/sis"
+    set expandtab
+    set tabstop=4
+    set softtabstop=4
+    set shiftwidth=4
+    retab!
+  else
+    set expandtab
+    set tabstop=2
+    set softtabstop=2
+    set shiftwidth=2
+    retab!
+  endif
+endfunction
+autocmd! BufReadPost,BufNewFile * call SetupEnvironment()
 
 " line numbers
 set number
@@ -71,11 +87,3 @@ set gdefault
 
 " ignore case when searching
 set ignorecase
-
-" PHP-specific settings
-
-" convert tabs to spaces when a PHP file is loaded
-auto BufReadPost *.php retab!
-
-" use 4 spaces instead of tabs
-autocmd FileType php set tabstop=4 softtabstop=4 shiftwidth=4
