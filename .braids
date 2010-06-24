@@ -1,47 +1,54 @@
----
-vim/bundle/ack.vim:
+--- 
+vim/bundle/ack.vim: 
   branch: master
   remote: braid/vim/bundle/ack.vim
   revision: 724747b4aee363cf6adbfb3436b8ebe5c9296153
   squashed: true
   type: git
   url: git://github.com/mileszs/ack.vim.git
-vim/bundle/git-vim:
+vim/bundle/git-vim: 
   branch: master
   remote: braid/vim/bundle/git-vim
   revision: cb110a2a9c1532b8737ed37953aeaaa48436351c
   squashed: true
   type: git
   url: git://github.com/motemen/git-vim.git
-vim/bundle/nerdtree:
+vim/bundle/nerdtree: 
   branch: master
   remote: braid/vim/bundle/nerdtree
   revision: a997ab3341596640ac0632e1a9e4192dff4516e0
   squashed: true
   type: git
   url: git://github.com/scrooloose/nerdtree.git
-vim/bundle/snipmate.vim:
+vim/bundle/snipmate.vim: 
   branch: master
   remote: braid/vim/bundle/snipmate.vim
   revision: f5a75d075d3c005ebe69e3f5e56cf99516e8aa3b
   squashed: true
   type: git
   url: git://github.com/msanders/snipmate.vim.git
-vim/bundle/vim-endwise:
+vim/bundle/vim-cucumber: 
+  branch: master
+  remote: braid/vim/bundle/vim-cucumber
+  revision: bbc287f99983e6cdb758ab4a4c901c704ffa312a
+  squashed: true
+  type: git
+  url: http://github.com/tpope/vim-cucumber.git
+vim/bundle/vim-endwise: 
   branch: master
   remote: braid/vim/bundle/vim-endwise
   revision: 780fa5603c0917d9b22e3b64dd8ab0423e006eb5
   squashed: true
   type: git
   url: git://github.com/tpope/vim-endwise.git
-vim/bundle/vim-rails:
+vim/bundle/vim-rails: 
   branch: master
   remote: braid/vim/bundle/vim-rails
   revision: c9a73db5d135c9188028ab3f4355d3de7f929850
   squashed: true
   type: git
   url: git://github.com/tpope/vim-rails.git
-vim/bundle/vim-supertab:
+vim/bundle/vim-supertab: 
   branch: master
   remote: braid/vim/bundle/vim-supertab
   revision: 096be343f89c63fc086a55262f2f264d0d0524b0
