@@ -65,7 +65,7 @@ set statusline+=%h%1*%m%r%w%0* " flag
 set statusline+=%= " right align
 set statusline+=%-14.(%l,%c%V%)\ %<%P " offset
 
-" NERDTree CONFIGURATION
+" NERDTree Configuration
 
 " Enable nice colors
 let NERDChristmasTree = 1
@@ -78,6 +78,9 @@ let NERDTreeShowHidden = 1
 
 " Make F2 open NERDTree
 nmap <F2> :NERDTreeToggle<CR>
+
+" FuzzyFinder Configuration
+map <leader>f :FufFile**/<CR>
 
 " show the `best match so far' as search strings are typed:
 set incsearch
