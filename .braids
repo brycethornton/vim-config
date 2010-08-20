@@ -44,7 +44,7 @@ vim/bundle/vim-endwise:
 vim/bundle/vim-rails: 
   branch: master
   remote: braid/vim/bundle/vim-rails
-  revision: c9a73db5d135c9188028ab3f4355d3de7f929850
+  revision: d74a364b2ffcc5733bf1514d219213d799d299c3
   squashed: true
   type: git
   url: git://github.com/tpope/vim-rails.git
