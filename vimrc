@@ -1,6 +1,9 @@
 " Enable pathogen
 call pathogen#runtime_append_all_bundles()
 
+" Use a comma as the leader
+let mapleader = ","
+
 " UTF-8 All the way
 scriptencoding utf-8
 
@@ -42,11 +45,15 @@ function! SetupEnvironment()
 endfunction
 autocmd! BufReadPost,BufNewFile * call SetupEnvironment()
 
+" Apply vimrc changes on the fly
+autocmd BufWritePost *vimrc source $MYVIMRC
+
+" Type ,v to open ~/.vimrc in a new tab
+nmap <leader>v :tabedit $MYVIMRC<CR>
+
 " line numbers
 set number
 set numberwidth=3
-
-let mapleader = ","
 
 " Set to auto read when a file is changed from the outside
 set autoread
