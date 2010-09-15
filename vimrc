@@ -29,7 +29,7 @@ function! SetupEnvironment()
     set noexpandtab
     set shiftwidth=4
     set tabstop=4
-  elseif l:path =~ "development\/sis"
+  elseif l:path =~ "development\/sis" || l:path =~ "development\/lms"
     set expandtab
     set tabstop=4
     set softtabstop=4
