@@ -148,10 +148,14 @@ function! GitCommit(args)
     let git_output = s:SystemGit('commit ' . args)
     let $EDITOR = editor_save
 
+    let cur_dir = getcwd()
     execute printf('%s %sCOMMIT_EDITMSG', g:git_command_edit, git_dir)
+    execute printf("lcd %s", cur_dir)
+
     setlocal filetype=git-status bufhidden=wipe
     augroup GitCommit
         autocmd BufWritePre  <buffer> g/^#\|^\s*$/d | setlocal fileencoding=utf-8
+        execute printf("autocmd BufEnter <buffer> lcd %s", cur_dir)
         execute printf("autocmd BufWritePost <buffer> call GitDoCommand('commit %s -F ' . expand('%%')) | autocmd! GitCommit * <buffer>", args)
     augroup END
 endfunction
@@ -266,7 +270,13 @@ function! GitDoCommand(args)
 endfunction
 
 function! s:SystemGit(args)
-    return system(g:git_bin . ' ' . a:args)
+    " workardound for MacVim, on which shell does not inherit environment
+    " variables
+    if has('mac') && &shell =~ 'sh$'
+        return system('EDITOR="" '. g:git_bin . ' ' . a:args)
+    else
+        return system(g:git_bin . ' ' . a:args)
+    endif
 endfunction
 
 " Show vimdiff for merge. (experimental)

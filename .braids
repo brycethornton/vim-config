@@ -9,7 +9,7 @@ vim/bundle/ack.vim:
 vim/bundle/git-vim: 
   branch: master
   remote: braid/vim/bundle/git-vim
-  revision: cb110a2a9c1532b8737ed37953aeaaa48436351c
+  revision: b2a32b9cfc1037c6adfbcfdcb2d37290484e41e4
   squashed: true
   type: git
   url: git://github.com/motemen/git-vim.git
