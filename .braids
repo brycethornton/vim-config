@@ -48,6 +48,13 @@ vim/bundle/vim-endwise:
   squashed: true
   type: git
   url: git://github.com/tpope/vim-endwise.git
+vim/bundle/vim-markdown: 
+  branch: master
+  remote: braid/vim/bundle/vim-markdown
+  revision: 34e28b3f6f6d702ff2963b8196eccae9344ed4bc
+  squashed: true
+  type: git
+  url: https://github.com/tpope/vim-markdown.git
 vim/bundle/vim-rails: 
   branch: master
   remote: braid/vim/bundle/vim-rails
