@@ -25,11 +25,12 @@ set directory=/tmp/
 
 function! SetupEnvironment()
   let l:path = expand('%:p')
+  let l:extension = expand('%:e')
   if l:path =~ "development\/wordpress" || l:path =~ "development\/fusefly"
     set noexpandtab
     set shiftwidth=4
     set tabstop=4
-  elseif l:path =~ "development\/sis" || l:path =~ "development\/lms"
+  elseif (l:path =~ "development\/sis" || l:path =~ "development\/lms") && l:extension == 'php'
     set expandtab
     set tabstop=4
     set softtabstop=4
