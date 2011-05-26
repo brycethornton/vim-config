@@ -34,6 +34,13 @@ vim/bundle/tabular:
   squashed: true
   type: git
   url: https://github.com/godlygeek/tabular.git
+vim/bundle/taglist: 
+  branch: master
+  remote: braid/vim/bundle/taglist
+  revision: 53041fbc45398a9af631a20657e109707a455339
+  squashed: true
+  type: git
+  url: https://github.com/vim-scripts/taglist.vim.git
 vim/bundle/vim-cucumber: 
   branch: master
   remote: braid/vim/bundle/vim-cucumber
