@@ -98,3 +98,9 @@ set gdefault
 
 " ignore case when searching
 set ignorecase
+
+" CTags
+map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+nnoremap <silent> <F8> :TlistToggle<CR>
+let Tlist_Use_Right_Window = 1
+let Tlist_GainFocus_On_ToggleOpen = 1
