@@ -41,6 +41,13 @@ vim/bundle/taglist:
   squashed: true
   type: git
   url: https://github.com/vim-scripts/taglist.vim.git
+vim/bundle/vim-coffee-script: 
+  branch: master
+  remote: braid/vim/bundle/vim-coffee-script
+  revision: feab54e0036b6a7aa524c293d02cf9ca40026ce7
+  squashed: true
+  type: git
+  url: https://github.com/kchmck/vim-coffee-script.git
 vim/bundle/vim-cucumber: 
   branch: master
   remote: braid/vim/bundle/vim-cucumber
