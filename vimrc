@@ -101,6 +101,8 @@ set ignorecase
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
-nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent> <F7> :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Sort_Type = 'name'
+let Tlist_File_Fold_Auto_Close = 1
