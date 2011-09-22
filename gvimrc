@@ -45,7 +45,7 @@ map <silent> <D-9> :tabn 9<CR>
 set showtabline=2
 
 " CTags
-map <2-LeftMouse> g<C-]>
+map <2-LeftMouse> <C-W>g<C-]>
 
 " set up tab labels with tab number, buffer name, number of windows
 function! GuiTabLabel()
