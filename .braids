@@ -15,8 +15,8 @@ vim/bundle/git-vim:
   url: git://github.com/motemen/git-vim.git
 vim/bundle/nerdtree: 
   branch: master
-  remote: braid/vim/bundle/nerdtree
-  revision: 2504666a723c56be9aaa3980dd2ee608fe2a631f
+  remote: master/braid/vim/bundle/nerdtree
+  revision: 30f6bcc30caf76bc1213f5c3d4001ba5d5fbe7fc
   squashed: true
   type: git
   url: git://github.com/scrooloose/nerdtree.git
