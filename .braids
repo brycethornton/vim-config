@@ -71,8 +71,8 @@ vim/bundle/vim-markdown:
   url: https://github.com/tpope/vim-markdown.git
 vim/bundle/vim-rails: 
   branch: master
-  remote: braid/vim/bundle/vim-rails
-  revision: 0a55cda9e826bd601f0389a787595bfbf9987306
+  remote: master/braid/vim/bundle/vim-rails
+  revision: 893ef3e0fde7404b3024e61ef312fe2972897559
   squashed: true
   type: git
   url: git://github.com/tpope/vim-rails.git
