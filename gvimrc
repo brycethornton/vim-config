@@ -1,6 +1,6 @@
 " Set the guifont
 " http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/
-set guifont=Inconsolata:h14
+set guifont=Inconsolata-dz:h12
 
 set antialias
 
