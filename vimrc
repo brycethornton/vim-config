@@ -26,7 +26,7 @@ set directory=/tmp/
 function! SetupEnvironment()
   let l:path = expand('%:p')
   let l:extension = expand('%:e')
-  if l:extension == 'php'
+  if l:extension == 'php' || l:extension == 'js'
     set expandtab
     set tabstop=4
     set softtabstop=4
