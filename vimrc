@@ -102,3 +102,8 @@ let Tlist_Use_Right_Window = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Sort_Type = 'name'
 let Tlist_File_Fold_Auto_Close = 1
+
+" Filetype overrides
+au BufRead,BufNewFile *.module set filetype=php
+au BufRead,BufNewFile *.info set filetype=php
+au BufRead,BufNewFile *.install set filetype=php
