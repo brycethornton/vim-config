@@ -1,5 +1,5 @@
 " Enable pathogen
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
 
 " Use a comma as the leader
 let mapleader = ","
@@ -23,24 +23,11 @@ set nowrap
 " Set temporary directory (don't litter local dir with swp/tmp files)
 set directory=/tmp/
 
-function! SetupEnvironment()
-  let l:path = expand('%:p')
-  let l:extension = expand('%:e')
-  if l:extension == 'php' || l:extension == 'js'
-    set expandtab
-    set tabstop=4
-    set softtabstop=4
-    set shiftwidth=4
-    retab!
-  else
-    set expandtab
-    set tabstop=2
-    set softtabstop=2
-    set shiftwidth=2
-    retab!
-  endif
-endfunction
-autocmd! BufReadPost,BufNewFile * call SetupEnvironment()
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+retab!
 
 " Apply vimrc changes on the fly
 autocmd BufWritePost *vimrc source $MYVIMRC
@@ -94,11 +81,3 @@ set gdefault
 
 " ignore case when searching
 set ignorecase
-
-" CTags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
-nnoremap <silent> <F7> :TlistToggle<CR>
-let Tlist_Use_Right_Window = 1
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Sort_Type = 'name'
-let Tlist_File_Fold_Auto_Close = 1
